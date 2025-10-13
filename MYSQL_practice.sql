@@ -16,5 +16,6 @@ City varchar(30)
 ) ;
 describe hamza;
 insert into Hamza (Roll_No,Name,Age,City)
-values(1,"Muhammad Hamza", 22,'Sahiwal');
+values(1,"Muhammad Ali", 22,'Sahiwal'),
+(2,"Muhammad Hamza", 22,'Sahiwal');
 select * from Hamza;
