@@ -9,7 +9,7 @@ con <- dbConnect(
   dbname = "mydb",
   host = "localhost",
   user = "root",
-  password = "lenovo&9090",
+  password = "",
   port = 3306
 )
 
