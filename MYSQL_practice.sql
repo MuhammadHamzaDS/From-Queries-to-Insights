@@ -26,3 +26,10 @@ select * from Hamza;
 select * from Hamza Where City = 'Tariq';
 delete from Hamza where City = 'Tariq';
 SET SQL_SAFE_UPDATES = 0;
+UPDATE Hamza
+SET name = 'Ali'
+WHERE Roll_No = 1;
+
+
+
+
