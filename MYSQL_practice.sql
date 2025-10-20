@@ -31,5 +31,10 @@ SET name = 'Ali'
 WHERE Roll_No = 1;
 
 
+SELECT COUNT(*) FROM Hamza;
+SELECT * FROM Hamza ORDER BY Name ASC;
+
+SELECT AVG(Age) AS AverageAge FROM Hamza;
+SELECT MAX(Age), MIN(Age) FROM Hamza;
 
 
