@@ -10,11 +10,11 @@ library(scales)
 # Replace values with your MySQL setup
 con <- dbConnect(
   RMySQL::MySQL(),
-  dbname   = "ecommerce_db",  # database name
-  host     = "localhost",     # host (or IP if remote)
-  port     = 3306,            # default MySQL port
-  user     = "root",          # your MySQL username
-  password = "lenovo&9090"  # your MySQL password
+  dbname   = "ecommerce_db",  
+  host     = "localhost",     
+  port     = 3306,          
+  user     = "root",        
+  password = "lenovo&9090"  
 )
 dbListTables(con)
 
@@ -30,6 +30,7 @@ order_details <- orders %>%
   inner_join(order_items, by = "order_id") %>%
   inner_join(products, by = "product_id") %>%
   inner_join(customers, by = "customer_id")
+
 
 
 top_products <- order_details %>%
